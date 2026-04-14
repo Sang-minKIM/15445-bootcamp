@@ -18,6 +18,11 @@ endif()
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
+# Compiling prerequisite executables
+add_executable(pointer_basics src/pointer_basics.cpp)
+add_executable(object_lifetime src/object_lifetime.cpp)
+add_executable(value_categories src/value_categories.cpp)
+
 # Compiling move semantics/references executables
 add_executable(references src/references.cpp)
 add_executable(move_semantics src/move_semantics.cpp)
